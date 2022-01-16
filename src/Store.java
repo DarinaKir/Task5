@@ -112,7 +112,7 @@ public class Store {
         System.out.println("Type your username :");
         String userName = scanner.nextLine();
         int userNameIndex = indexOfUserName(userName);
-        if (userNameIndex < 0){
+        if (userNameIndex<0){
             System.out.println("There is no account with such a username.");
         }else if ((clientOrWorker.equalsIgnoreCase("client")&&(users[userNameIndex] instanceof Client))  || (clientOrWorker.equalsIgnoreCase("worker")&&(users[userNameIndex] instanceof Worker))) {
             System.out.println("Type your password :");
